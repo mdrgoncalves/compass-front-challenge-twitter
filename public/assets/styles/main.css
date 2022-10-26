@@ -267,7 +267,7 @@ fieldset {
 
 .btn--secondary, .btn--primary {
   background-color: #1DA1F2;
-  padding: 0 6.46vw;
+  width: 228px;
   border-radius: 100px;
   font-weight: 700;
 }
@@ -292,6 +292,21 @@ fieldset {
 
 .btn--big {
   height: 49px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.menu .logo {
+  height: 30px;
+  width: 30px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

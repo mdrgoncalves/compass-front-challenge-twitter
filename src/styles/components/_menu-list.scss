@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    .logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
