@@ -1,4 +1,4 @@
-import '../../public/assets/styles/main.css';
+import '/public/assets/styles/main.css';
 
 export interface MenuItemProps {
     iconType: 'home' | 'explore' | 'notifications' | 'messages' | 'bookmarks' | 'lists' | 'profile' | 'more',
