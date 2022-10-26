@@ -265,4 +265,33 @@ fieldset {
   filter: invert(51%) sepia(78%) saturate(1632%) hue-rotate(175deg) brightness(96%) contrast(98%);
 }
 
+.btn--secondary, .btn--primary {
+  background-color: #1DA1F2;
+  padding: 0 6.46vw;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
+.btn--primary {
+  color: #FFFFFF;
+}
+
+.btn--secondary {
+  color: #1DA1F2;
+  background-color: transparent;
+  border: 1px solid #1DA1F2;
+}
+
+.btn--small {
+  height: 30px;
+}
+
+.btn--medium {
+  height: 39px;
+}
+
+.btn--big {
+  height: 49px;
+}
+
 /*# sourceMappingURL=main.css.map */
