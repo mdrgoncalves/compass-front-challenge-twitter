@@ -244,6 +244,14 @@ fieldset {
   margin: 0;
 }
 
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  padding: 11px 10px 0;
+}
+
 .menu-item {
   list-style-type: none;
   display: flex;
