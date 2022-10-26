@@ -8,6 +8,7 @@ html {
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -242,6 +243,10 @@ fieldset {
   border-width: 0;
   padding: 0;
   margin: 0;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
