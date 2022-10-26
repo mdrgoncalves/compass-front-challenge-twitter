@@ -257,6 +257,16 @@ html {
   padding: 11px 10px 0;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 598px;
+  max-width: 100%;
+  height: 53px;
+  padding: 0 15px;
+}
+
 .menu-item {
   list-style-type: none;
   display: flex;
@@ -354,6 +364,24 @@ html {
 .profile__id {
   font-weight: 500;
   color: #5B7083;
+}
+
+.theme-switch {
+  width: 24px;
+  height: 24px;
+}
+
+.heading-2, .heading-1 {
+  font-weight: 700;
+  color: #0F1419;
+}
+
+.heading-1 {
+  font-size: 1.1875rem;
+}
+
+.heading-2 {
+  font-size: 0.94rem;
 }
 
 /*# sourceMappingURL=main.css.map */
