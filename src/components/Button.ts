@@ -4,19 +4,28 @@ export interface ButtonProps {
     primary: boolean;
     label: string;
     size: 'small' | 'medium' | 'big';
+    smallerWidth?: boolean;
+    onClick?: () => void;
 }
 
 export const createButton = ({
     primary,
     label,
-    size
+    size,
+    smallerWidth,
+    onClick,
 }: ButtonProps) => {
-    return `
-        <button 
-            class='btn ${primary ? 'btn--primary' : 'btn--secondary'} 
-            ${'btn--' + size}'
-        >
-            ${label}
-        </button>
-    `;
+
+    const button = document.createElement('button');
+    button.classList.add(
+        'btn',
+        `${primary ? 'btn--primary' : 'btn--secondary'}`,
+        `${'btn--' + size}`,
+        `${smallerWidth ? 'btn--smaller' : 'btn--primary'}`
+    );
+
+    button.textContent = label;
+    button.addEventListener('click', onClick);
+    
+    return button;
 };

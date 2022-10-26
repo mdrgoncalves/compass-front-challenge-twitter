@@ -10,6 +10,8 @@ export default {
             control: { type: 'select' },
             options: ['small', 'medium', 'big'],
         },
+        smallerWidth: { control: 'boolean' },
+        onClick: { action: 'clicked' },
     },
 } as Meta;
 
@@ -43,4 +45,12 @@ SecondarySmall.args = {
     primary: false,
     label: 'Secondary',
     size: 'small',
+};
+
+export const SmallerButton = Template.bind({});
+SmallerButton.args = {
+    primary: false,
+    label: 'Smaller Button',
+    size: 'big',
+    smallerWidth: true,
 };
