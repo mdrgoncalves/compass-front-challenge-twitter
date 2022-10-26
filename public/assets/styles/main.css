@@ -244,4 +244,25 @@ fieldset {
   margin: 0;
 }
 
+.menu-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: none;
+  align-items: center;
+}
+.menu-item__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.menu-item__link {
+  font-size: 1.1875rem;
+  font-weight: bold;
+}
+.menu-item:hover {
+  filter: invert(51%) sepia(78%) saturate(1632%) hue-rotate(175deg) brightness(96%) contrast(98%);
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.menu-item {
+    list-style-type: none;
+    @include flex(row, nowrap, none, center);
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    &__link{
+        font-size: 1.1875rem;
+        font-weight: bold;
+    }
+
+    &:hover {
+        filter: invert(51%) sepia(78%) saturate(1632%) hue-rotate(175deg) brightness(96%) contrast(98%);
+    }
+}
