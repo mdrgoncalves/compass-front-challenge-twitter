@@ -5,13 +5,16 @@ export interface AvatarProps {
 }
 
 export const createAvatar = ({size} : AvatarProps) => {
-    return `
-        <picture class='avatar'>
-            <img 
-                class='avatar__icon--${size}' 
-                src='/assets/img/avatar.svg' 
-                alt='avatar icon' 
-            />
-        </picture>
+
+    const avatar = document.createElement('picture');
+    avatar.classList.add('avatar');
+    avatar.innerHTML = `
+        <img 
+            class='avatar__icon--${size}' 
+            src='/assets/img/avatar.svg' 
+            alt='avatar icon' 
+        />
     `;
+
+    return avatar;
 }
