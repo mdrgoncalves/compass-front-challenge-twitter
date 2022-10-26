@@ -1,0 +1,36 @@
+.post-card {
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+        "avatar-icon text-area text-area"
+        "avatar-icon post-buttons tweet-button"; 
+    width: 556px;
+    max-width: 100%;
+    column-gap: 12px;
+    padding: 10px 15px;
+
+    &__avatar {
+        grid-area: avatar-icon;
+    }
+
+    &__input {
+        grid-area: text-area;
+    }
+
+    &__buttons {
+        grid-area: post-buttons;
+        display: flex;
+        align-items: center;
+    }
+
+    &__tweet-container {
+        grid-area: tweet-button;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__tweet {
+        opacity: 0.5;
+    }
+}
