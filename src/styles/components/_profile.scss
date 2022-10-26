@@ -1,0 +1,20 @@
+.profile {
+    width: 255px;
+    height: 69px;
+    @include flex(row, nowrap, space-between, center);
+
+    &__identification {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $color-black;
+    }
+
+    &__id {
+        font-weight: 500;
+        color: $color-black-five;
+    }
+}

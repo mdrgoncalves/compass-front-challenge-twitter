@@ -321,4 +321,26 @@ fieldset {
   border-radius: 50%;
 }
 
+.profile {
+  width: 255px;
+  height: 69px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__identification {
+  display: flex;
+  gap: 10px;
+}
+.profile__name {
+  font-weight: 700;
+  color: #0F1419;
+}
+.profile__id {
+  font-weight: 500;
+  color: #5B7083;
+}
+
 /*# sourceMappingURL=main.css.map */
