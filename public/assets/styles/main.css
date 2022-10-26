@@ -309,4 +309,16 @@ fieldset {
   gap: 20px;
 }
 
+.avatar-icon--small {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.avatar__icon--medium {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=main.css.map */
