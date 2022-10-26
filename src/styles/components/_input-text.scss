@@ -1,0 +1,18 @@
+.input-text {
+    width: 507px;
+    max-width: 100%;
+    height: 49px;
+    border: none;
+    margin: 12px 0 0 15px;
+    resize: none;
+
+    &::placeholder {
+        color: $color-black-five;
+        font-weight: 600;
+    }
+
+    &:focus {
+        outline: none;
+        height: 70px;
+    }
+}
