@@ -317,6 +317,10 @@ html {
 .menu-item:hover {
   filter: invert(51%) sepia(78%) saturate(1632%) hue-rotate(175deg) brightness(96%) contrast(98%);
 }
+.menu-item__other {
+  color: #1DA1F2;
+  font-size: 0.875rem;
+}
 
 .btn--secondary, .btn--primary {
   background-color: #1DA1F2;

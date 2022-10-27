@@ -6,9 +6,10 @@ export default {
     argTypes: {
         iconType: { 
             control: { type: 'select' },
-            options: ['home', 'explore', 'notifications', 'messages', 'bookmarks', 'lists', 'profile', 'more'],
+            options: ['home', 'explore', 'notifications', 'messages', 'bookmarks', 'lists', 'profile', 'more', 'other'],
         },
         label: { control: 'text' },
+        href: { control: 'text' },
     },
 } as Meta;
 
@@ -62,4 +63,10 @@ export const More = Template.bind({});
 More.args = {
     iconType: 'more',
     label: 'More',
+};
+
+export const Other = Template.bind({});
+Other.args = {
+    iconType: 'other',
+    label: 'Other',
 };

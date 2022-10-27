@@ -16,4 +16,9 @@
     &:hover {
         filter: invert(51%) sepia(78%) saturate(1632%) hue-rotate(175deg) brightness(96%) contrast(98%);
     }
+
+    &__other {
+        color: $color-primary-blue;
+        font-size: 0.875rem;
+    }
 }
