@@ -442,4 +442,9 @@ html {
   gap: 15px;
 }
 
+.post-timer__text {
+  font-weight: 600;
+  color: #5B7083;
+}
+
 /*# sourceMappingURL=main.css.map */
