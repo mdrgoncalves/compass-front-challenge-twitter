@@ -3,10 +3,11 @@ import { createMenuList } from './MenuList';
 
 export default {
     title: 'Components/Menu List',
-    parameters: {
-        options: {
-            showPanel: false,
-        }
+    
+    argTypes: {
+        redirectError: {
+            control: { type: 'boolean' },
+        },
     }
 } as Meta;
 

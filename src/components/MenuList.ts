@@ -2,9 +2,9 @@ import '/public/assets/styles/main.css';
 import { createButton } from './Button';
 import { createMenuItem, MenuItemProps } from './MenuItem';
 
-export const createMenuList = () => {
+export const createMenuList = (redirectError: boolean = false) => {
 
-    const pagError = '#';
+    const pagError = redirectError ? '/pages/error404.html' : '#';
 
     const menuItens: MenuItemProps[] = [
         {

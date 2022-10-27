@@ -109,7 +109,7 @@ export const createTweetCard = ({
     const showThread = createMenuItem({
         iconType: 'other',
         label: 'Show this thread',
-        href: '#',
+        href: '/pages/error404.html',
     });
     showThread.classList.add('tweet-card__show-thread');
 
