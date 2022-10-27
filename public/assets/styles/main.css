@@ -447,4 +447,28 @@ html {
   color: #5B7083;
 }
 
+.tweet-button {
+  display: flex;
+  align-items: center;
+}
+.tweet-button__icon {
+  height: 24px;
+  width: 24px;
+}
+.tweet-button__count {
+  margin-left: 10px;
+  padding-top: 5px;
+  color: #5B7083;
+  font-weight: 600;
+}
+
+.tweet-buttons {
+  width: max(509px, 29.23vw);
+}
+.tweet-buttons__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=main.css.map */
