@@ -297,6 +297,46 @@ html {
   opacity: 0.5;
 }
 
+.tweet-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "avatar identification" "avatar tweet-text" "avatar image" "avatar tweet-buttons" "avatar show-thread";
+  column-gap: 10px;
+  row-gap: 8px;
+  width: min(598px, 100%);
+  padding: 9px 15px 15px;
+}
+.tweet-card__avatar {
+  grid-area: avatar;
+}
+.tweet-card__identity {
+  grid-area: identification;
+  display: flex;
+  gap: 6px;
+}
+.tweet-card__content {
+  grid-area: tweet-text;
+}
+.tweet-card__image {
+  grid-area: image;
+  margin-top: 6px;
+}
+.tweet-card__image--content {
+  width: 100%;
+  border-radius: 1rem;
+}
+.tweet-card__actions {
+  grid-area: tweet-buttons;
+  margin-top: 6px;
+  padding-right: 9.55vw;
+}
+.tweet-card__show-thread {
+  grid-area: show-thread;
+  margin-top: 6px;
+}
+
 .menu-item {
   list-style-type: none;
   display: flex;
