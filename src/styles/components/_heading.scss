@@ -8,7 +8,14 @@
     font-size: 1.1875rem;
 }
 
-.heading-2 {
+.heading-2,
+.heading-3 {
     @extend %heading;
-    font-size: 0.94rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.heading-3 {
+    @extend %heading;
+    color: $color-black-five;
 }

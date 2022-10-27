@@ -49,22 +49,32 @@ export const createMenuList = () => {
         }
     ];
 
+    const menu = document.createElement('div');
+    menu.classList.add('menu');
 
-    return `
-        <div class='menu'>
-            <h1>
-                <a href='#' class='logo'>
-                    <img src='/assets/img/logo.svg' alt='logo' class='logo__img'/>
-                </a>
-            </h1>
-            <ul class='menu-list'>
-                ${menuItens.map(item => createMenuItem(item)).join('')}
-            </ul>
-            ${createButton({
-                primary: true,
-                label: 'Tweet',
-                size: 'big'
-            })}
-        </div>
+    const logo = document.createElement('h1');
+    logo.innerHTML = `
+        <a href='#' class='logo'>
+            <img src='/assets/img/logo.svg' alt='logo' class='logo__img'/>
+        </a>
     `;
+
+    const menuList = document.createElement('ul');
+    menuList.classList.add('menu-list');
+    
+    menuItens.forEach(item => {
+        menuList.appendChild(createMenuItem(item));
+    });
+
+    const button = createButton({
+        primary: true,
+        label: 'Tweet',
+        size: 'big'
+    });
+
+    menu.appendChild(logo);
+    menu.appendChild(menuList);
+    menu.appendChild(button);
+
+    return menu;
 }

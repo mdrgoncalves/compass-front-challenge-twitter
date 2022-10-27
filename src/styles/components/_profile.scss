@@ -7,14 +7,4 @@
         display: flex;
         gap: 10px;
     }
-
-    &__name {
-        font-weight: 700;
-        color: $color-black;
-    }
-
-    &__id {
-        font-weight: 500;
-        color: $color-black-five;
-    }
 }

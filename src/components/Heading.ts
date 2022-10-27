@@ -1,7 +1,7 @@
 import '/public/assets/styles/main.css';
 
 export interface HeadingProps {
-    level: 1 | 2;
+    level: 1 | 2 | 3;
     text: string;
 }
 

@@ -1,17 +1,12 @@
 import '../public/assets/styles/main.css';
+import { createProfile } from './components/Profile';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+const app = document.querySelector<HTMLDivElement>('#app')!;
+
+const profile = createProfile({
+    profileName: 'John Doe',
+    profileId: 'johndoe'
+});
+
+app.appendChild(profile);
 

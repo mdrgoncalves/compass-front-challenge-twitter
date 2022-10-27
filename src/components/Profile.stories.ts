@@ -13,8 +13,8 @@ const Template: Story<ProfileProps> = (args) => {
     return createProfile(args);
 }
 
-export const Default = Template.bind({});
-Default.args = {
+export const Profile = Template.bind({});
+Profile.args = {
     profileName: 'Jerome Bell',
     profileId: 'afonsoinocente',
 };

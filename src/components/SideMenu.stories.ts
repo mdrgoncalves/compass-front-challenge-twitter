@@ -14,6 +14,6 @@ const Template: Story = () => {
     return createSideMenu();
 }
 
-export const Default = Template.bind({});
-Default.args = {};
+export const SideMenu = Template.bind({});
+SideMenu.args = {};
 

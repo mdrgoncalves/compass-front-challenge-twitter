@@ -11,10 +11,11 @@ export const createSideMenu = () => {
         profileId: 'afonsoinocente',
     });
 
-    return `
-        <div class='side-menu'>
-            ${menuList}
-            ${profile}
-        </div>
-    `;
+    const sideMenu = document.createElement('aside');
+    sideMenu.classList.add('side-menu');
+
+    sideMenu.appendChild(menuList);
+    sideMenu.appendChild(profile);
+
+    return sideMenu;
 }

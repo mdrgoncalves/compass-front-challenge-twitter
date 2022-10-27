@@ -14,5 +14,5 @@ const Template: Story = () => {
     return createMenuList();
 };
 
-export const Default = Template.bind({});
-Default.args = {};
+export const MenuList = Template.bind({});
+MenuList.args = {};

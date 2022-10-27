@@ -392,21 +392,14 @@ html {
   display: flex;
   gap: 10px;
 }
-.profile__name {
-  font-weight: 700;
-  color: #0F1419;
-}
-.profile__id {
-  font-weight: 500;
-  color: #5B7083;
-}
 
 .theme-switch {
   width: 24px;
   height: 24px;
 }
 
-.heading-2, .heading-1 {
+.heading-2,
+.heading-3, .heading-1 {
   font-weight: 700;
   color: #0F1419;
 }
@@ -415,8 +408,14 @@ html {
   font-size: 1.1875rem;
 }
 
-.heading-2 {
-  font-size: 0.94rem;
+.heading-2,
+.heading-3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.heading-3 {
+  color: #5B7083;
 }
 
 .input-text {

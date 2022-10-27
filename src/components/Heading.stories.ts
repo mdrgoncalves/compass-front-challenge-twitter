@@ -6,7 +6,7 @@ export default {
     argTypes: {
         level: {
             control: { type: 'select' },
-            options: [1, 2],
+            options: [1, 2, 3],
         },
         text: { control: 'text' },
     },
@@ -28,3 +28,8 @@ Heading2.args = {
     text: 'Heading 2',
 };
 
+export const Heading3 = Template.bind({});
+Heading3.args = {
+    level: 3,
+    text: 'Heading 3',
+};
