@@ -8,6 +8,9 @@ export default {
             control: { type: 'select' },
             options: ['small', 'medium'],
         },
+        avatarLocation: {
+            control: { type: 'text' },
+        },
     }
 } as Meta;
 
