@@ -11,6 +11,10 @@ export default {
             options: ['small', 'medium', 'big'],
         },
         smallerWidth: { control: 'boolean' },
+        invertColor: {
+            control: { type: 'select' },
+            options: ['primary', 'secondary'],
+        },
         onClick: { action: 'clicked' },
     },
 } as Meta;
@@ -53,4 +57,20 @@ SmallerButton.args = {
     label: 'Smaller Button',
     size: 'big',
     smallerWidth: true,
+};
+
+export const InvertedPrimaryButton = Template.bind({});
+InvertedPrimaryButton.args = {
+    primary: true,
+    label: 'Inverted Button',
+    size: 'big',
+    invertColor: 'primary',
+};
+
+export const InvertedSecondaryButton = Template.bind({});
+InvertedSecondaryButton.args = {
+    primary: false,
+    label: 'Inverted Button',
+    size: 'big',
+    invertColor: 'secondary',
 };

@@ -33,3 +33,15 @@
     width: fit-content;
     padding: 0 1rem;
 }
+
+.btn--invert-primary {
+    color: $color-black;
+    background-color: $color-black-seven;
+    border: none;
+}
+
+.btn--invert-secondary {
+    color: $color-black-seven;
+    background-color: transparent;
+    border: 1px solid $color-black-seven;
+}

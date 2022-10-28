@@ -5,6 +5,7 @@ export interface ButtonProps {
     label: string;
     size: 'small' | 'medium' | 'big';
     smallerWidth?: boolean;
+    invertColor?: 'primary' | 'secondary';
     onClick?: () => void;
 }
 
@@ -13,6 +14,7 @@ export const createButton = ({
     label,
     size,
     smallerWidth,
+    invertColor,
     onClick,
 }: ButtonProps) => {
 
@@ -21,7 +23,8 @@ export const createButton = ({
         'btn',
         `${primary ? 'btn--primary' : 'btn--secondary'}`,
         `${'btn--' + size}`,
-        `${smallerWidth ? 'btn--smaller' : 'btn--primary'}`
+        `${smallerWidth ? 'btn--smaller' : 'btn--primary'}`,
+        `${'btn--invert-' + invertColor}`
     );
 
     button.textContent = label;
