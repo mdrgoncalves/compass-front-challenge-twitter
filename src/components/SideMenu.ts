@@ -4,9 +4,10 @@ import { createProfile } from './Profile';
 
 export const createSideMenu = () => {
 
-    const menuList = createMenuList();
+    const menuList = createMenuList(true);
     
     const profile = createProfile({
+        type: 'menu',
         profileName: 'Jerome Bell',
         profileId: 'afonsoinocente',
     });

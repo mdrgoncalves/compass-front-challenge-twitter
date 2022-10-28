@@ -69,7 +69,8 @@ export const createMenuList = (redirectError: boolean = false) => {
     const button = createButton({
         primary: true,
         label: 'Tweet',
-        size: 'big'
+        size: 'big',
+        onClick: focusPostMenu
     });
 
     menu.appendChild(logo);
@@ -77,4 +78,9 @@ export const createMenuList = (redirectError: boolean = false) => {
     menu.appendChild(button);
 
     return menu;
+}
+
+function focusPostMenu() {
+    const inputText = document.querySelector<HTMLInputElement>('.post-card__input')!;
+    inputText.focus();
 }
