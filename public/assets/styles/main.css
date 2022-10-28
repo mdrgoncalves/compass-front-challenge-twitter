@@ -337,6 +337,32 @@ html {
   margin-top: 6px;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #1DA1F2;
+  padding: 1rem;
+}
+.footer__content {
+  color: #FFFFFF;
+  margin-left: 20vw;
+}
+.footer__content-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer__content-text {
+  font-weight: 600;
+}
+.footer__buttons {
+  margin-right: 2vw;
+}
+.footer__buttons-login {
+  margin-right: 1rem;
+}
+
 .menu-item {
   list-style-type: none;
   display: flex;
@@ -394,6 +420,18 @@ html {
 .btn--smaller {
   width: fit-content;
   padding: 0 1rem;
+}
+
+.btn--invert-primary {
+  color: #0F1419;
+  background-color: #EBEEF0;
+  border: none;
+}
+
+.btn--invert-secondary {
+  color: #EBEEF0;
+  background-color: transparent;
+  border: 1px solid #EBEEF0;
 }
 
 .menu {
@@ -601,6 +639,14 @@ html {
   font-size: 1rem;
   padding: 11px 16px;
   margin-top: 3px;
+}
+
+.copyright {
+  width: 350px;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #5B7083;
+  font-weight: 600;
 }
 
 .error {

@@ -11,6 +11,7 @@
 @import 'layout/header';
 @import 'layout/post-card';
 @import 'layout/tweet-card';
+@import 'layout/footer';
 
 //COMPONENTS
 @import 'components/menu-item';
@@ -29,6 +30,7 @@
 @import 'components/input-search';
 @import 'components/news-card';
 @import 'components/content-container';
+@import 'components/copyright';
 
 //PAGES
 @import 'pages/error404';
