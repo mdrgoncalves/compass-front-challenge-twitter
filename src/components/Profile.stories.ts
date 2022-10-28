@@ -4,19 +4,44 @@ import { createProfile, ProfileProps } from './Profile';
 export default {
     title: 'Components/Profile',
     argTypes: {
-        profileName: { control: 'text' },
-        profileId: { control: 'text' },
-    },
+        type: {
+            control: {
+                type: 'select',
+                options: ['menu', 'follow']
+            }
+        },
+        avatarSrc: {
+            control: {
+                type: 'text'
+            }
+        },
+        profileName: {
+            control: {
+                type: 'text'
+            }
+        },
+        profileId: {
+            control: {
+                type: 'text'
+            }
+        },
+    }
 } as Meta;
 
-const Template: Story<ProfileProps> = (args) => {
-    return createProfile(args);
-}
+const Template: Story<ProfileProps> = (args) => createProfile(args);
 
-export const Profile = Template.bind({});
-Profile.args = {
-    profileName: 'Jerome Bell',
-    profileId: 'afonsoinocente',
+export const Menu = Template.bind({});
+Menu.args = {
+    type: 'menu',
+    profileName: 'John Doe',
+    profileId: 'johndoe'
+};
+
+export const Follow = Template.bind({});
+Follow.args = {
+    type: 'follow',
+    profileName: 'John Doe',
+    profileId: 'johndoe'
 };
 
 

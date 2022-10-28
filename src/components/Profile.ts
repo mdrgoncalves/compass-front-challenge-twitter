@@ -1,18 +1,26 @@
-import { createHeading } from './Heading';
 import '/public/assets/styles/main.css';
+import { createButton } from './Button';
+import { createHeading } from './Heading';
 import { createAvatar } from './Avatar';
 
 export interface ProfileProps {
+    type: 'menu' | 'follow';
+    avatarSrc?: string;
     profileName: string;
     profileId: string;
 }
 
 export const createProfile = ({
+    type,
+    avatarSrc,
     profileName,
     profileId
 }: ProfileProps) => {
 
-    const avatar = createAvatar({size: 'small'});
+    const avatar = createAvatar({
+        size: 'small',
+        avatarLocation: avatarSrc
+    });
 
     const profile = document.createElement('article');
     profile.classList.add('profile');
@@ -40,6 +48,21 @@ export const createProfile = ({
     profileContent.appendChild(profileIdText);
 
     profile.appendChild(identification);
+
+    if (type === 'follow') {
+        profile.classList.add('profile--follow');
+
+        const followButton = createButton({
+            primary: false,
+            label: 'Follow',
+            size: 'small',
+            smallerWidth: true
+        });
+
+        profile.appendChild(followButton);
+
+        return profile;
+    }
 
     profile.innerHTML += `
         <button class='profile__button'>
