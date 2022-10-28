@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createInputTextArea, InputTextAreaProps } from './InputTextArea';
 
 export default {
-    title: 'Components/Input Text Area',
+    title: 'Components/Inputs',
     argTypes: {
         placeholder: { control: 'text' },
         charactersLimit: { control: 'number' },
