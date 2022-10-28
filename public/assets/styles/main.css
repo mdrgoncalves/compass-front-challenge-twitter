@@ -577,6 +577,25 @@ html {
   margin-right: 4px;
 }
 
+.content-container {
+  width: 350px;
+  height: fit-content;
+  max-height: 457px;
+  background-color: #F7F9FA;
+  border-radius: 16px;
+  padding: 11px 16px;
+}
+.content-container__title {
+  font-size: 1.25rem;
+}
+.content-container--placeholder {
+  height: 300px;
+}
+.content-container__show-more a {
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
 .error {
   width: 100%;
   height: 100vh;

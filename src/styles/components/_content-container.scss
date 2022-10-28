@@ -1,0 +1,23 @@
+.content-container {
+    width: 350px;
+    height: fit-content;
+    max-height: 457px;
+    background-color: $color-black-eight;
+    border-radius: 16px;
+    $content-padding: 11px 16px;
+
+    &__title {
+        font-size: 1.25rem;
+        padding: $content-padding;
+    }
+
+    &--placeholder {
+        height: 300px;
+    }
+
+    &__show-more a {
+        font-size: 1rem;
+        padding: $content-padding;
+        margin-top: 3px;
+    }
+}
