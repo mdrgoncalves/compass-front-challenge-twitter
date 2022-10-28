@@ -583,17 +583,18 @@ html {
   max-height: 457px;
   background-color: #F7F9FA;
   border-radius: 16px;
-  padding: 11px 16px;
 }
 .content-container__title {
   font-size: 1.25rem;
+  padding: 11px 16px;
 }
 .content-container--placeholder {
   height: 300px;
 }
 .content-container__show-more a {
   font-size: 1rem;
-  padding-bottom: 5px;
+  padding: 11px 16px;
+  margin-top: 3px;
 }
 
 .error {
