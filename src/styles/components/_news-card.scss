@@ -1,0 +1,45 @@
+.news-card {
+    display: grid; 
+    width: 350px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto auto; 
+    row-gap: 6px; 
+    grid-template-areas: 
+        "news-heading news-image"
+        "news-title news-image"
+        "news-trend news-image"; 
+    padding: 10px 15px;
+    border-top: 1px solid $color-black-seven;
+    border-bottom: 1px solid $color-black-seven;
+
+    &__heading {
+        grid-area: news-heading;
+        font-size: 0.875rem;
+    }
+
+    &__title {
+        grid-area: news-title;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        height: 54px;
+    }
+
+    &__image {
+        grid-area: news-image;
+        margin-left: 15px;
+        border-radius: 12px;
+        width: 71px;
+        height: 69px;
+    }
+
+    &__trending {
+        grid-area: news-trend;
+        display: flex;
+        align-items: center;
+        
+        &-text {
+            font-size: 0.875rem;
+            margin-right: 4px;
+        }
+    }
+}
