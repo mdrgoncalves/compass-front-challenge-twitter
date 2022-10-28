@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: repeat(3, auto); 
+    grid-template-rows: auto 1fr 1fr 1fr; 
+    column-gap: 2.08vw;
+    grid-template-areas: 
+        "side-menu header newsletter"
+        "side-menu posts newsletter"
+        "side-menu posts newsletter"
+        "footer footer footer"; 
+    width: min(1440px, 100vw);
+    height: 100vh;
+    overflow-y: hidden;
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+}
+
+
+.app-side-menu {
+    grid-area: side-menu; 
+}
+
+.app-post-header {
+    grid-area: header; 
+}
+
+.app-spacer {
+    border-left: $border-gray;
+    border-right: $border-gray;
+    border-bottom: $border-gray;
+}
+
+.app-tweets-container {
+    grid-area: posts;
+    border-left: $border-gray;
+    border-right: $border-gray;
+    overflow-y: scroll;
+}
+
+.app-info-aside {
+    grid-area: newsletter;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+
+.app-footer {
+    grid-area: footer;
+}
+

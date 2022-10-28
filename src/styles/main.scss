@@ -1,17 +1,20 @@
 //ABSTRACTS
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
 //BASE
 @import 'base/reset';
 @import 'base/typography';
 
 //LAYOUT
+@import 'layout/container';
 @import 'layout/side-menu';
 @import 'layout/header';
 @import 'layout/post-card';
 @import 'layout/tweet-card';
 @import 'layout/footer';
+@import 'layout/info-aside';
 
 //COMPONENTS
 @import 'components/menu-item';

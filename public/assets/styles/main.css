@@ -9,6 +9,10 @@ html {
 }
 */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+.post-card {
+  border: 2px solid #EBEEF0;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -249,11 +253,63 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  column-gap: 2.08vw;
+  grid-template-areas: "side-menu header newsletter" "side-menu posts newsletter" "side-menu posts newsletter" "footer footer footer";
+  width: min(1440px, 100vw);
+  height: 100vh;
+  overflow-y: hidden;
+}
+.container ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.app-side-menu {
+  grid-area: side-menu;
+}
+
+.app-post-header {
+  grid-area: header;
+}
+
+.app-spacer {
+  border-left: 2px solid #EBEEF0;
+  border-right: 2px solid #EBEEF0;
+  border-bottom: 2px solid #EBEEF0;
+}
+
+.app-tweets-container {
+  grid-area: posts;
+  border-left: 2px solid #EBEEF0;
+  border-right: 2px solid #EBEEF0;
+  overflow-y: scroll;
+}
+
+.app-info-aside {
+  grid-area: newsletter;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+
+.app-footer {
+  grid-area: footer;
+}
+
 .side-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 91vh;
   padding: 11px 10px 0;
 }
 
@@ -261,10 +317,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 598px;
-  max-width: 100%;
+  width: max(598px, 100%);
   height: 53px;
   padding: 0 15px;
+  border-left: 2px solid #EBEEF0;
+  border-right: 2px solid #EBEEF0;
 }
 
 .post-card {
@@ -272,8 +329,7 @@ html {
   grid-template-columns: auto 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "avatar-icon text-area text-area" "avatar-icon post-buttons tweet-button";
-  width: 556px;
-  max-width: 100%;
+  width: max(556px, 100%);
   column-gap: 12px;
   padding: 10px 15px;
 }
@@ -305,8 +361,9 @@ html {
   grid-template-areas: "avatar identification" "avatar tweet-text" "avatar image" "avatar tweet-buttons" "avatar show-thread";
   column-gap: 10px;
   row-gap: 8px;
-  width: min(598px, 100%);
+  width: max(598px, 100%);
   padding: 9px 15px 15px;
+  border-bottom: 2px solid #EBEEF0;
 }
 .tweet-card__avatar {
   grid-area: avatar;
@@ -361,6 +418,17 @@ html {
 }
 .footer__buttons-login {
   margin-right: 1rem;
+}
+
+.info-aside {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  max-width: 100%;
+  height: 91vh;
+  max-height: 100%;
 }
 
 .menu-item {
@@ -562,7 +630,7 @@ html {
 .spacer {
   width: max(598px, 100%);
   height: 10px;
-  color: #F7F9FA;
+  background-color: #F7F9FA;
 }
 .spacer--outline {
   border: 1px solid black;
@@ -580,7 +648,6 @@ html {
   background-position: 15px center;
   color: #5B7083;
   font-weight: 600;
-  margin: 1rem;
 }
 
 .news-card {

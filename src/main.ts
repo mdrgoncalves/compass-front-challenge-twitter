@@ -1,12 +1,5 @@
-import '../public/assets/styles/main.css';
-import { createProfile } from './components/Profile';
+import { renderHomePage } from "./modules/renderHomePage";
 
-const app = document.querySelector<HTMLDivElement>('#app')!;
+renderHomePage();
 
-const profile = createProfile({
-    profileName: 'John Doe',
-    profileId: 'johndoe'
-});
-
-app.appendChild(profile);
 
