@@ -11,8 +11,9 @@
         "avatar show-thread";
     column-gap: 10px;
     row-gap: 8px;
-    width: min(598px, 100%); 
+    width: max(598px, 100%); 
     padding: 9px 15px 15px;
+    border-bottom: 2px solid $color-black-seven;
 
     &__avatar {
         grid-area: avatar;

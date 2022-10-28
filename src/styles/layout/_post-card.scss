@@ -5,10 +5,10 @@
     grid-template-areas: 
         "avatar-icon text-area text-area"
         "avatar-icon post-buttons tweet-button"; 
-    width: 556px;
-    max-width: 100%;
+    width: max(556px, 100%);
     column-gap: 12px;
     padding: 10px 15px;
+    @extend %borders-gray;
 
     &__avatar {
         grid-area: avatar-icon;
