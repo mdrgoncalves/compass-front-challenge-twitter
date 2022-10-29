@@ -1,6 +1,14 @@
 import '/public/assets/styles/main.css';
 
-export const createPostTimer = (mockupTime: boolean = false) => {
+export interface PostTimerProps {
+    mockup?: boolean;
+    mockupValue?: string;
+}
+
+export const createPostTimer = ({
+    mockup,
+    mockupValue
+}: PostTimerProps) => {
 
     const postTimer = document.createElement('div');
     postTimer.classList.add('post-timer');
@@ -8,7 +16,13 @@ export const createPostTimer = (mockupTime: boolean = false) => {
     const postTimerText = document.createElement('p');
     postTimerText.classList.add('post-timer__text');
 
-    const postTime = mockupTime ? new Date(2022, 0, 10).getTime() : new Date().getTime();
+    const postTime = new Date().getTime();
+
+    if (mockup) {
+        postTimerText.textContent = `${mockupValue}`;
+        postTimer.appendChild(postTimerText);
+        return postTimer;
+    }
 
     setInterval(() => {
         const now = new Date().getTime();

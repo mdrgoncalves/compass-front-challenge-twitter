@@ -25,6 +25,11 @@ export default {
                 type: 'boolean'
             }
         },
+        mockupTimeValue: {
+            control: {
+                type: 'text'
+            }
+        },
         tweetText: {
             control: {
                 type: 'text'

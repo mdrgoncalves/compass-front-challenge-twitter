@@ -1,28 +1,34 @@
 import { Story, Meta } from '@storybook/html';
-import { createPostTimer } from './PostTimer';
-
-type PostTimerArgs = {
-    mockupTime: boolean;
-}
+import { createPostTimer, PostTimerProps } from './PostTimer';
 
 export default {
     title: 'Components/Post Timer',
     argTypes: {
-        mockupTime: { control: 'boolean' },
+        mockup: {
+            control: {
+                type: 'boolean'
+            }
+        },
+        mockupValue: {
+            control: {
+                type: 'text'
+            }
+        }
     }
-} as Meta<PostTimerArgs>;
+} as Meta;
 
-const Template: Story<PostTimerArgs> = (args) => {
-    return createPostTimer(args.mockupTime);
+const Template: Story<PostTimerProps> = (args) => {
+    return createPostTimer(args);
 }
 
 export const PostTimerDefault = Template.bind({});
 PostTimerDefault.args = {
-    mockupTime: false,
+    mockup: false,
 }
 
 export const PostTimerMockup = Template.bind({});
 PostTimerMockup.args = {
-    mockupTime: true,
+    mockup: true,
+    mockupValue: '1h'
 }
 

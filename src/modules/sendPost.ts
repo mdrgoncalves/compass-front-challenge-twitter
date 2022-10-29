@@ -44,6 +44,7 @@ export function sendPost(): void {
 
         tweetContainer.prepend(newPost);
         localStorage.removeItem('newImage');
+        inputTextArea.value = '';
     });
 
 }

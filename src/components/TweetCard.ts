@@ -10,6 +10,7 @@ export interface TweetCardProps {
     tweetPersonName?: string;
     tweetPersonUsername?: string;
     mockup?: boolean;
+    mockupTimeValue?: string;
     tweetText?: string;
     tweetImageSrc?: string;
     randomButtons?: boolean;
@@ -20,6 +21,7 @@ export const createTweetCard = ({
     tweetPersonName,
     tweetPersonUsername,
     mockup,
+    mockupTimeValue,
     tweetText,
     tweetImageSrc,
     randomButtons
@@ -56,8 +58,12 @@ export const createTweetCard = ({
     });
 
     mockup = mockup || false;
+    mockupTimeValue = mockupTimeValue || '1h';
 
-    const tweetTime = createPostTimer(mockup);
+    const tweetTime = createPostTimer({
+        mockup: mockup,
+        mockupValue: mockupTimeValue
+    });
 
     tweetIdentity.append(tweetName);
     tweetIdentity.append(tweetId);

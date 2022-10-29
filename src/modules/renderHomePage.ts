@@ -35,24 +35,41 @@ export function renderHomePage() {
     tweetsContainer.classList.add('app-tweets-container');
 
     const tweetCard = createTweetCard({
-        tweetPersonName: 'John Doe',
-        tweetPersonUsername: '@johndoe',
+        avatarSrc: '/assets/img/darlene-follow.png',
+        tweetPersonName: 'Darlene Robertson',
+        tweetPersonUsername: '@darlenemichelle',
         mockup: true,
-        tweetText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc est aliquam nulla, eget ultricies lorem ipsum sed nunc. Sed euismod, nunc vel tincidunt lacinia, nunc est aliquam nulla, eget ultricies lorem ipsum sed nunc.',
+        mockupTimeValue: '1h',
+        tweetText: 'Uaaaah, I can now create my own tweets and post them on my profile!',
+        tweetImageSrc: '/assets/img/darlene-test-image.png',
         randomButtons: true,
     });
     tweetCard.classList.add('app-tweet-card');
 
     const tweetCardTwo = createTweetCard({
-        tweetPersonName: 'John Doe',
-        tweetPersonUsername: '@johndoe',
+        avatarSrc: '/assets/img/devon-follow.png',
+        tweetPersonName: 'Devon Lane',
+        tweetPersonUsername: '@devonlane',
         mockup: true,
-        tweetText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc est aliquam nulla, eget ultricies lorem ipsum sed nunc. Sed euismod, nunc vel tincidunt lacinia, nunc est aliquam nulla, eget ultricies lorem ipsum sed nunc.',
+        mockupTimeValue: '2d',
+        tweetText: 'Nice! I don\'t know how to code, but I can now learn how to do it with this new feature! This is awesome and I\'m so happy!',
+        tweetImageSrc: '/assets/img/devon-test-image.jpg',
         randomButtons: true,
     });
     tweetCardTwo.classList.add('app-tweet-card');
 
-    tweetsContainer.append(tweetCard, tweetCardTwo);
+    const tweetCardThree = createTweetCard({
+        avatarSrc: '/assets/img/devon-follow.png',
+        tweetPersonName: 'Devon Lane',
+        tweetPersonUsername: '@devonlane',
+        mockup: true,
+        mockupTimeValue: '1mo',
+        tweetText: 'OMG! I have a new follower! I\'m so happy! I\'m going to tweet about it!',
+        randomButtons: true,
+    });
+    tweetCardTwo.classList.add('app-tweet-card');
+
+    tweetsContainer.append(tweetCard, tweetCardTwo, tweetCardThree);
 
     const infoAside = createInfoAside();
     infoAside.classList.add('app-info-aside');
