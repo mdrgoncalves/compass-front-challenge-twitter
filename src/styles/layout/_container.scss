@@ -7,7 +7,7 @@ body {
 .container {
     display: grid; 
     grid-template-columns: repeat(3, auto); 
-    grid-template-rows: auto 1fr 1fr 1fr; 
+    grid-template-rows: auto 1fr 1fr auto; 
     column-gap: 2.08vw;
     grid-template-areas: 
         "side-menu header newsletter"

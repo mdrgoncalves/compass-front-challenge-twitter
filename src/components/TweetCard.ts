@@ -77,8 +77,6 @@ export const createTweetCard = ({
     const tweetImage = document.createElement('picture');
     tweetImage.classList.add('tweet-card__image');
 
-    tweetImageSrc = tweetImageSrc || '/assets/img/image-test.png';
-
     tweetImage.innerHTML = `
         <img
             class='tweet-card__image--content'
@@ -87,7 +85,9 @@ export const createTweetCard = ({
         />
     `;
 
-    tweetCard.append(tweetImage);
+    if (tweetImageSrc) {
+        tweetCard.append(tweetImage);
+    }
 
     const randomCounters: number[] = randomButtons ? [
         getRandomNumber(),
