@@ -27,6 +27,7 @@
 
     &__content {
         grid-area: tweet-text; 
+        line-break: anywhere;
     }
 
     &__image {
