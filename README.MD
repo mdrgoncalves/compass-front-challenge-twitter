@@ -38,28 +38,22 @@ The following tools were used in the construction of the project:
 
 ---
 
-## 🛠 Run Instructions
+## ⚙️ Run Instructions
 
 Install dependencies
 
 ```bash 
-
-npm install
-    
+npm install  
 ```
 
 Run application in developer mode
 
 ```bash 
-
 npm run dev
-    
 ```
 
 Run the application's Storybook
 
 ```bash 
-
 npm run storybook
-    
 ```
