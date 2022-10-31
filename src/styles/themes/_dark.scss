@@ -22,7 +22,8 @@
     & .heading-3,
     & .tweet-button__count,
     & .input-search::placeholder,
-    & .post-timer__text {
+    & .post-timer__text,
+    & .copyright {
         color: $color-black-six;
     }
 
@@ -63,6 +64,5 @@
 
     & .content-container {
         background-color: $color-black-two;
-    }
-    
+    }  
 }

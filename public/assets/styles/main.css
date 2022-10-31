@@ -516,7 +516,7 @@ body {
 .menu-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .avatar-icon--small {
@@ -781,7 +781,7 @@ input[type=file] {
 .dark-theme .menu-item__link, .dark-theme .heading-1, .dark-theme .heading-2, .dark-theme .tweet-card__content {
   color: #FFFFFF;
 }
-.dark-theme .input-text, .dark-theme .input-text::placeholder, .dark-theme .heading-3, .dark-theme .tweet-button__count, .dark-theme .input-search::placeholder, .dark-theme .post-timer__text {
+.dark-theme .input-text, .dark-theme .input-text::placeholder, .dark-theme .heading-3, .dark-theme .tweet-button__count, .dark-theme .input-search::placeholder, .dark-theme .post-timer__text, .dark-theme .copyright {
   color: #8899A6;
 }
 .dark-theme .tweet-button__icon {
