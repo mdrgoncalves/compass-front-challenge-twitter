@@ -10,7 +10,7 @@ html {
 */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 .post-card {
-  border: 2px solid #EBEEF0;
+  border: 1px solid #EBEEF0;
 }
 
 html {
@@ -283,15 +283,14 @@ body {
 }
 
 .app-spacer {
-  border-left: 2px solid #EBEEF0;
-  border-right: 2px solid #EBEEF0;
-  border-bottom: 2px solid #EBEEF0;
+  border-left: 1px solid #EBEEF0;
+  border-right: 1px solid #EBEEF0;
 }
 
 .app-tweets-container {
   grid-area: posts;
-  border-left: 2px solid #EBEEF0;
-  border-right: 2px solid #EBEEF0;
+  border-left: 1px solid #EBEEF0;
+  border-right: 1px solid #EBEEF0;
   overflow-y: scroll;
 }
 
@@ -320,8 +319,8 @@ body {
   width: max(598px, 100%);
   height: 53px;
   padding: 0 15px;
-  border-left: 2px solid #EBEEF0;
-  border-right: 2px solid #EBEEF0;
+  border-left: 1px solid #EBEEF0;
+  border-right: 1px solid #EBEEF0;
 }
 
 .post-card {
@@ -363,7 +362,7 @@ body {
   row-gap: 8px;
   width: max(598px, 100%);
   padding: 9px 15px 15px;
-  border-bottom: 2px solid #EBEEF0;
+  border-top: 1px solid #EBEEF0;
 }
 .tweet-card__avatar {
   grid-area: avatar;
@@ -545,7 +544,6 @@ body {
 }
 .profile--follow {
   padding: 10px 15px;
-  border-top: 1px solid #EBEEF0;
   border-bottom: 1px solid #EBEEF0;
 }
 
@@ -668,7 +666,6 @@ input[type=file] {
   row-gap: 6px;
   grid-template-areas: "news-heading news-image" "news-title news-image" "news-trend news-image";
   padding: 10px 15px;
-  border-top: 1px solid #EBEEF0;
   border-bottom: 1px solid #EBEEF0;
 }
 .news-card__heading {
@@ -708,6 +705,7 @@ input[type=file] {
 .content-container__title {
   font-size: 1.25rem;
   padding: 11px 16px;
+  border-bottom: 1px solid #EBEEF0;
 }
 .content-container--placeholder {
   height: 300px;
@@ -746,6 +744,48 @@ input[type=file] {
 .error-content__description {
   font-size: 1.2rem;
   margin-top: 1rem;
+}
+
+.dark-theme {
+  background-color: #17202A;
+}
+.dark-theme .logo__img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(181deg) brightness(113%) contrast(101%);
+}
+.dark-theme .menu-item__icon {
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(312deg) brightness(101%) contrast(101%);
+}
+.dark-theme .menu-item__link, .dark-theme .heading-1, .dark-theme .heading-2, .dark-theme .tweet-card__content {
+  color: #FFFFFF;
+}
+.dark-theme .input-text, .dark-theme .input-text::placeholder, .dark-theme .heading-3, .dark-theme .tweet-button__count, .dark-theme .input-search::placeholder {
+  color: #8899A6;
+}
+.dark-theme .tweet-button__icon {
+  filter: invert(65%) sepia(31%) saturate(176%) hue-rotate(163deg) brightness(87%) contrast(88%);
+}
+.dark-theme .header, .dark-theme .spacer, .dark-theme .app-tweets-container {
+  border-left: 1px solid #3A444C;
+  border-right: 1px solid #3A444C;
+}
+.dark-theme .spacer {
+  background-color: #1C2733;
+}
+.dark-theme .post-card {
+  border: 1px solid #3A444C;
+}
+.dark-theme .tweet-card {
+  border-top: 1px solid #3A444C;
+}
+.dark-theme .content-container__title, .dark-theme .news-card, .dark-theme .profile--follow {
+  border-bottom: 1px solid #3A444C;
+}
+.dark-theme .input-search {
+  background-color: #283340;
+  color: #8899A6;
+}
+.dark-theme .content-container {
+  background-color: #1C2733;
 }
 
 /*# sourceMappingURL=main.css.map */

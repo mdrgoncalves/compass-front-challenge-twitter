@@ -12,7 +12,7 @@ export const createHeader = ({
 
     const themeSwitch = createThemeSwitch({
         onClick: () => {
-            alert('Theme switch clicked');
+            document.body.classList.toggle('dark-theme');
         }
     });
 
