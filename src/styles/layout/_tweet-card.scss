@@ -32,10 +32,13 @@
     &__image {
         grid-area: image; 
         margin-top: 6px;
+        height: 35vh;
 
         &--content {
             width: 100%;
+            height: 100%;
             border-radius: 1rem;
+            border: 1px solid $color-black-four;
         }
     }
 
