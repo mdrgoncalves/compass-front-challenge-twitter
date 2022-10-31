@@ -1,5 +1,5 @@
-import { sendPost } from './modules/sendPost';
-import { renderHomePage } from "./modules/renderHomePage";
+import { sendPost } from './utilities/sendPost';
+import { renderHomePage } from "./components/pages/HomePage";
 
 renderHomePage();
 sendPost();
