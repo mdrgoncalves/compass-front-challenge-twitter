@@ -1,5 +1,5 @@
-import { createButton } from '../atoms/Button';
 import '/public/assets/styles/main.css';
+import { createButton } from '../atoms/Button';
 import { createInputTextArea } from '../atoms/InputTextArea';
 import { createAvatar } from '../atoms/Avatar';
 import { createPostButtons } from '../molecules/PostButtons';
