@@ -13,7 +13,7 @@
     row-gap: 8px;
     width: max(598px, 100%); 
     padding: 9px 15px 15px;
-    border-bottom: 2px solid $color-black-seven;
+    border-top: 1px solid $color-black-seven;
 
     &__avatar {
         grid-area: avatar;

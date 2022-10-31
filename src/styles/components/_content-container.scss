@@ -9,6 +9,7 @@
     &__title {
         font-size: 1.25rem;
         padding: $content-padding;
+        border-bottom: 1px solid $color-black-seven;
     }
 
     &--placeholder {

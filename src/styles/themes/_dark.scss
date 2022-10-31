@@ -1,0 +1,67 @@
+.dark-theme {
+    background-color: $color-primary-dark;
+
+    & .logo__img,
+    & .profile__button-icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(181deg) brightness(113%) contrast(101%);
+    }
+
+    & .menu-item__icon {
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(312deg) brightness(101%) contrast(101%);
+    }
+
+    & .menu-item__link,
+    & .heading-1,
+    & .heading-2,
+    & .tweet-card__content {
+        color: $color-white;
+    }
+
+    & .input-text,
+    & .input-text::placeholder,
+    & .heading-3,
+    & .tweet-button__count,
+    & .input-search::placeholder,
+    & .post-timer__text {
+        color: $color-black-six;
+    }
+
+    & .tweet-button__icon {
+        filter: invert(65%) sepia(31%) saturate(176%) hue-rotate(163deg) brightness(87%) contrast(88%);
+    }
+    
+    & .header,
+    & .spacer,
+    & .app-tweets-container {
+        border-left: 1px solid $color-dark-border;
+        border-right: 1px solid $color-dark-border;
+    }
+
+    & .spacer {
+        background-color: $color-black-two;
+    }
+
+    & .post-card {
+        border: 1px solid $color-dark-border;
+    }
+
+    & .tweet-card {
+        border-top: 1px solid $color-dark-border;
+    }
+
+    & .content-container__title,
+    & .news-card,
+    & .profile--follow {
+        border-bottom: 1px solid $color-dark-border;
+    }
+
+    & .input-search {
+        background-color: $color-black-three;
+        color: $color-black-six;
+    }
+
+    & .content-container {
+        background-color: $color-black-two;
+    }
+    
+}
