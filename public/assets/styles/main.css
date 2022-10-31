@@ -378,10 +378,13 @@ body {
 .tweet-card__image {
   grid-area: image;
   margin-top: 6px;
+  height: 30vh;
 }
 .tweet-card__image--content {
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
+  border: 1px solid #3A444C;
 }
 .tweet-card__actions {
   grid-area: tweet-buttons;
@@ -623,6 +626,7 @@ input[type=file] {
   margin-left: 10px;
   padding-top: 5px;
   color: #5B7083;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -758,7 +762,7 @@ input[type=file] {
 .dark-theme .menu-item__link, .dark-theme .heading-1, .dark-theme .heading-2, .dark-theme .tweet-card__content {
   color: #FFFFFF;
 }
-.dark-theme .input-text, .dark-theme .input-text::placeholder, .dark-theme .heading-3, .dark-theme .tweet-button__count, .dark-theme .input-search::placeholder {
+.dark-theme .input-text, .dark-theme .input-text::placeholder, .dark-theme .heading-3, .dark-theme .tweet-button__count, .dark-theme .input-search::placeholder, .dark-theme .post-timer__text {
   color: #8899A6;
 }
 .dark-theme .tweet-button__icon {
@@ -771,7 +775,7 @@ input[type=file] {
 .dark-theme .spacer {
   background-color: #1C2733;
 }
-.dark-theme .post-card {
+.dark-theme .post-card, .dark-theme .tweet-card__image--content {
   border: 1px solid #3A444C;
 }
 .dark-theme .tweet-card {

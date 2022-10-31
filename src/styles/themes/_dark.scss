@@ -41,7 +41,8 @@
         background-color: $color-black-two;
     }
 
-    & .post-card {
+    & .post-card,
+    & .tweet-card__image--content {
         border: 1px solid $color-dark-border;
     }
 
