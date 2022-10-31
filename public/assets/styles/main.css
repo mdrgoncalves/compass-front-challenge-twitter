@@ -389,7 +389,7 @@ body {
 .tweet-card__actions {
   grid-area: tweet-buttons;
   margin-top: 6px;
-  padding-right: 9.55vw;
+  padding-right: 5%;
 }
 .tweet-card__show-thread {
   grid-area: show-thread;
@@ -735,19 +735,38 @@ input[type=file] {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  background-color: #F7F9FA;
 }
 .error-content {
   text-align: center;
+  width: 30%;
 }
 .error-content__title {
-  font-size: 15rem;
+  font-size: 12rem;
+  color: #5B7083;
 }
 .error-content__subtitle {
   font-size: 2.5rem;
+  color: #8899A6;
 }
 .error-content__description {
   font-size: 1.2rem;
   margin-top: 1rem;
+  color: #3A444C;
+}
+.error-content__logo {
+  width: 30px;
+}
+.error-content__back {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error-content__button {
+  margin-top: 1rem;
+  color: #1DA1F2;
 }
 
 .dark-theme {
