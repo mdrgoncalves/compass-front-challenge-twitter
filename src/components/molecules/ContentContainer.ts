@@ -36,7 +36,7 @@ export const createContentContainer = ({
     const containerShowMore = createMenuItem({
         iconType: 'other',
         label: 'Show more',
-        href: '/assets/pages/error404.html',
+        href: '/pages/error404.html',
     });
     containerShowMore.classList.add('content-container__show-more');
     

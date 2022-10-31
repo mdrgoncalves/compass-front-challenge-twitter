@@ -17,7 +17,7 @@ export const createFooter = () => {
     const footerButtons = document.createElement('div');
     footerButtons.classList.add('footer__buttons');
 
-    const redirect = '/assets/pages/error404.html';
+    const redirect = '/pages/error404.html';
 
     const loginButton = createButton({
         primary: false,
