@@ -374,6 +374,7 @@ body {
 }
 .tweet-card__content {
   grid-area: tweet-text;
+  line-break: anywhere;
 }
 .tweet-card__image {
   grid-area: image;
