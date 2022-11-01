@@ -1,8 +1,7 @@
 .tweet-card {
     display: grid; 
     grid-template-columns: auto 1fr; 
-    grid-template-rows: auto auto 1fr auto auto; 
-    gap: 0px 0px; 
+    grid-template-rows: auto auto auto auto auto; 
     grid-template-areas: 
         "avatar identification"
         "avatar tweet-text"
@@ -33,7 +32,8 @@
     &__image {
         grid-area: image; 
         margin-top: 6px;
-        height: 35vh;
+        width: min(509px, 100%);
+        height: 290px;
 
         &--content {
             width: 100%;
@@ -46,7 +46,7 @@
     &__actions {
         grid-area: tweet-buttons;
         margin-top: 6px; 
-        padding-right: 5%;
+        padding-right: 20%;
     }
 
     &__show-thread {

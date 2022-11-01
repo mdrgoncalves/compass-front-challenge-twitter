@@ -261,17 +261,31 @@ body {
 
 .container {
   display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  width: min(1440px, 100vw);
+  height: 100vh;
+  grid-template-areas: "top-container" "footer";
+}
+
+.top-container {
+  grid-area: top-container;
+  display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: auto 1fr 1fr auto;
   column-gap: 2.08vw;
-  grid-template-areas: "side-menu header newsletter" "side-menu posts newsletter" "side-menu posts newsletter" "footer footer footer";
-  width: min(1440px, 100vw);
-  height: 100vh;
-  overflow-y: hidden;
+  grid-template-areas: "side-menu header newsletter" "side-menu posts newsletter" "side-menu posts newsletter";
+  overflow: hidden;
+  padding: 0 6.806%;
 }
-.container ::-webkit-scrollbar {
+.top-container ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+@media screen and (max-width: 1440px) {
+  .top-container {
+    padding: 0;
+  }
 }
 
 .app-side-menu {
@@ -355,8 +369,7 @@ body {
 .tweet-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto 1fr auto auto;
-  gap: 0px 0px;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "avatar identification" "avatar tweet-text" "avatar image" "avatar tweet-buttons" "avatar show-thread";
   column-gap: 10px;
   row-gap: 8px;
@@ -379,7 +392,8 @@ body {
 .tweet-card__image {
   grid-area: image;
   margin-top: 6px;
-  height: 35vh;
+  width: min(509px, 100%);
+  height: 290px;
 }
 .tweet-card__image--content {
   width: 100%;
@@ -390,7 +404,7 @@ body {
 .tweet-card__actions {
   grid-area: tweet-buttons;
   margin-top: 6px;
-  padding-right: 5%;
+  padding-right: 20%;
 }
 .tweet-card__show-thread {
   grid-area: show-thread;
@@ -632,7 +646,7 @@ input[type=file] {
 }
 
 .tweet-buttons {
-  width: max(509px, 29.23vw);
+  width: 509px;
 }
 .tweet-buttons__list {
   display: flex;

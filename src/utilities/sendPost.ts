@@ -45,6 +45,7 @@ export function sendPost(): void {
         if (inputTextArea.value.length > 0) tweetContainer.prepend(newPost);
         localStorage.removeItem('newImage');
         inputTextArea.value = '';
+        tweetButton.style.opacity = '0.5'
     });
 
 }
