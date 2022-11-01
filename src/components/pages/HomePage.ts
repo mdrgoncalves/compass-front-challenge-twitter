@@ -11,6 +11,9 @@ export function renderHomePage() {
     const container = document.querySelector<HTMLDivElement>('#container')!;
     container.classList.add('container');
 
+    const topContainer = document.createElement('div');
+    topContainer.classList.add('top-container');
+
     const sideMenu = createSideMenu();
     sideMenu.classList.add('app-side-menu');
 
@@ -76,5 +79,7 @@ export function renderHomePage() {
     const footer = createFooter();
     footer.classList.add('app-footer');
 
-    container.append(sideMenu, postHeader, tweetsContainer, infoAside, footer);
+    topContainer.append(sideMenu, postHeader, tweetsContainer, infoAside);
+
+    container.append(topContainer, footer);
 }

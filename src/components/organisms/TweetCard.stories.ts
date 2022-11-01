@@ -35,6 +35,11 @@ export default {
                 type: 'text'
             }
         },
+        tweetImageSrc: {
+            control: {
+                type: 'text'
+            }
+        },
         randomButtons: {
             control: {
                 type: 'boolean'
@@ -49,5 +54,6 @@ const Template: Story<TweetCardProps> = (args) => {
 
 export const TweetCard = Template.bind({});
 TweetCard.args = {
-    randomButtons: true
+    randomButtons: true,
+    tweetImageSrc: '/assets/img/page-cover.png'
 };
